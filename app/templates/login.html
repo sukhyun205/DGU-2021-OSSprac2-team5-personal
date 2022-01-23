@@ -8,14 +8,14 @@
       </head>
 
       <section>
-         <hr width="210" align="left" color="black" />
+         <hr align="center" style="border:groove 4px blue; width:50%" />
          <h1>OSSP 계정 로그인</h1>
-         <hr width="210" align="left" color="black" />
+         <hr align="center" style="border:groove 4px blue; width:50%" />
        </section>
 
 
       {% if error %}
-         <p><strong>Error:</strong> {{ error }}
+         <p><strong>Error:</strong> {{ <b>error</b> }}
       {% endif %}
 
       <form action = "" method = "POST">
@@ -31,7 +31,21 @@
             </dd>>
          </d1>
          <p><input type = "submit" value = "Sign Up" />   <input type="submit" value="Login"></p>
-         <hr width="210" align="left" color="black" />
+         <hr align="center" style="border:groove 4px blue; width:50%" />
       </form>
    </body>
 </html>
+
+<style>
+   html {
+      text-align: center;
+   }
+
+   p strong {
+      color: red;
+   }
+
+   p b {
+      color: red;
+   }
+</style>
